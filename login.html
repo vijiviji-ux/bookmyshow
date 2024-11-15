@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookMyShow Ticket Booking</title>
+  <link rel="icon" href="./images/favicon.png">
+  <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <h1>BookMyShow</h1>
+    </header>
+
+    <!-- Ticket Booking Form -->
+    <section class="booking-section">
+      <h2>Book Your Ticket</h2>
+      <form class="booking-form">
+        <!-- Mobile Number -->
+        <input type="tel" id="mobilenumber" placeholder="Enter Mobile Number"   pattern="[0-9]{10}" required>
+
+        <!-- Movie Selection -->
+        <select id="movie" required>
+          <option value="" disabled selected>Select a Movie</option>
+          <option value="kanguva">Kanguva</option>
+          <option value="amaran">Amaran</option>
+          <option value="luckybasker">Lucky Basker</option>
+          <option value="venom">Venom</option>
+        </select>
+
+        <!-- Date Selection -->
+        <input type="date" id="date"  required>
+
+        <!-- Number of Tickets -->
+        <input type="number" id="number"  placeholder="Number of Tickets" min="1" max="10"   required>
+
+        <!-- OTP Field -->
+        <input type="text" id="otp" placeholder="Enter OTP" pattern="[0-9]{4,6}"   required>
+
+        <!-- Book Now Button -->
+        <button type="button" onclick="ordersumbit()">Book Now</button>
+      </form>
+    </section>
+    <button id="output" style="background-color: #e50914; color: white; margin-left: 25%; padding: 10px; border-radius: 3px; border: none; "></button>
+
+  </div>
+
+
+  <script src="./javascript/main.js"></script>
+</body>
+</html>

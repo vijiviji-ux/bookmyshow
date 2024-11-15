@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+.header{
+    margin-top: 30px;
+}
+.slimer img {
+    width: 100%;    /* Makes the image responsive to container's width */
+    height: auto;   /* Maintains the image's aspect ratio */
+    display: block; /* Removes any space below the image */
+    margin-top: 20px;
+  }
+  .events img{
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+    margin-left: 40px;
+  }
+  .premire img{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+  }
+
+  .pre{
+    background-color: rgb(6, 13, 85);
+  }
+
+  .premierse{
+    background-color: rgb(43, 47, 92);
+    margin-bottom: 50px;
+    color: white;
+    width: 100%;
+
+    
+}
+.premierse img{
+    height: 300px;
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.premierse h6 p{
+    text-align: center;
+
+}
+.premierse h1 p{
+    margin-top: 30px;
+}
+
+
+@media screen and (max-width:650px) {
+    .header{
+        margin-top: 20px;
+    }
+
+    .slimer img {
+        /* Optional: You can set a max-width if the image is too large on smaller screens */
+        max-width: 100%;
+        margin-top: 10px; /* Optional: add margin to top for mobile view */
+      }
+
+      .events img{
+        height: 50px;
+        width: 50px;
+        padding: 5px;
+        margin-left: 20px;
+      }
+      .premire img{
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+      }
+      
+    
+}
+
+
+    
+  
